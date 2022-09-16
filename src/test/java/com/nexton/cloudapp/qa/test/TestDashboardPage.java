@@ -7,26 +7,24 @@ import org.testng.annotations.Test;
 
 public class TestDashboardPage extends BaseTest {
 
-//    @Test(priority = 0, description = "Log out of the application")
-//    public void logoutScenario() throws Exception {
-//        homePage.clickLogInLink();
-//        loginPage.sendValueEmailInp(ExcelUtils.getCellStringData("loginData", 0, 0));
-//        loginPage.sendValuePassInp(ExcelUtils.getCellStringData("loginData", 0, 1));
-//        System.out.println("Password:  "+ExcelUtils.getCellStringData("loginData", 0, 1));
-//        loginPage.clickSignInBtn();
-//        dashboardPage.clickAvatarLink();
-//        String user= dashboardPage.getUserEmail();
-//        softAssert.assertEquals(user, "nextontest@yopmail.com");
-//        dashboardPage.clickSignOutLink();
-//
-//    }
+    @Test(priority = 0, description = "Log out of the application")
+    public void logoutScenario() throws Exception {
+        homePage.clickLogInLink();
+        loginPage.sendValueEmailInp(ExcelUtils.getCellStringData("loginData", 0, 0));
+        loginPage.sendValuePassInp(ExcelUtils.getCellStringData("loginData", 0, 1));
+        loginPage.clickSignInBtn();
+        dashboardPage.clickAvatarLink();
+        String user= dashboardPage.getUserEmail();
+        softAssert.assertEquals(user, "nextontest@yopmail.com");
+        dashboardPage.clickSignOutLink();
+
+    }
 
     @Test(priority = 1, description = "Change the avatar photo in the profile")
     public void changeAvatarScenario() throws Exception {
         homePage.clickLogInLink();
         loginPage.sendValueEmailInp(ExcelUtils.getCellStringData("loginData", 0, 0));
         loginPage.sendValuePassInp(ExcelUtils.getCellStringData("loginData", 0, 1));
-        System.out.println("Password:  " + ExcelUtils.getCellStringData("loginData", 0, 1));
         loginPage.clickSignInBtn();
         dashboardPage.clickAvatarLink();
         dashboardPage.clickSettingsLink();

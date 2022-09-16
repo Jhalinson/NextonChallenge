@@ -8,8 +8,8 @@
 
 
         <classes>
-<!--            <class name="com.nexton.cloudapp.qa.test.TestSignUpPage"></class>-->
-<!--            <class name="com.nexton.cloudapp.qa.test.TestLoginPage"></class>-->
+            <class name="com.nexton.cloudapp.qa.test.TestSignUpPage"></class>
+            <class name="com.nexton.cloudapp.qa.test.TestLoginPage"></class>
             <class name="com.nexton.cloudapp.qa.test.TestDashboardPage"></class>
         </classes>
     </test>

@@ -9,9 +9,7 @@ public class TestSignUpPage extends BaseTest {
     public void signUpScenario() throws Exception {
         homePage.clickSignUpBtn();
         signUpPage.sendValueEmailInp(ExcelUtils.getCellStringData("signUpData", 1, 0));
-        System.out.println("EMail: "+ExcelUtils.getCellStringData("signUpData", 1, 0));
         signUpPage.sendValuePassInp(ExcelUtils.getCellStringData("signUpData", 0, 1));
-        System.out.println("Password:  "+ExcelUtils.getCellStringData("signUpData", 0, 1));
         signUpPage.clickSignUpBtn();
         String m =onboardingPage.getTextMessage();
         softAssert.assertEquals(m, "Account created successfully");
@@ -21,9 +19,7 @@ public class TestSignUpPage extends BaseTest {
     public void signUpSameEmailScenario() throws Exception {
         homePage.clickSignUpBtn();
         signUpPage.sendValueEmailInp(ExcelUtils.getCellStringData("signUpData", 0, 0));
-        System.out.println("EMail: "+ExcelUtils.getCellStringData("signUpData", 0, 0));
         signUpPage.sendValuePassInp(ExcelUtils.getCellStringData("signUpData", 0, 1));
-        System.out.println("Password:  "+ExcelUtils.getCellStringData("signUpData", 0, 1));
         signUpPage.clickSignUpBtn();
         String m =onboardingPage.getTextMessageValidationFailed();
         softAssert.assertEquals(m, "Validation failed: Email has already been taken");
