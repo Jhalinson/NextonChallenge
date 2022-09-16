@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-15T22:50:17 AST" name="All Test Suite" finished-at="2022-09-15T22:53:13 AST" duration-ms="176316">
+    <groups>
+    </groups>
+    <test started-at="2022-09-15T22:50:17 AST" name="Test" finished-at="2022-09-15T22:53:13 AST" duration-ms="176316">
+      <class name="com.nexton.cloudapp.qa.test.TestDashboardPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nexton.cloudapp.qa.test.TestDashboardPage@4b8d604b]" started-at="2022-09-15T22:50:17 AST" name="setUp" finished-at="2022-09-15T22:50:23 AST" duration-ms="6603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="changeAvatarScenario()[pri:1, instance:com.nexton.cloudapp.qa.test.TestDashboardPage@4b8d604b]" started-at="2022-09-15T22:50:23 AST" name="changeAvatarScenario" description="Change the avatar photo in the profile" finished-at="2022-09-15T22:53:12 AST" duration-ms="168427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeAvatarScenario -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nexton.cloudapp.qa.test.TestDashboardPage@4b8d604b]" started-at="2022-09-15T22:53:13 AST" name="tearDown" finished-at="2022-09-15T22:53:13 AST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nexton.cloudapp.qa.test.TestDashboardPage -->
+    </test> <!-- Test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

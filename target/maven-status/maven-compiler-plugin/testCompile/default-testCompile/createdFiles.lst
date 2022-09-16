@@ -1,0 +1,4 @@
+com/nexton/cloudapp/qa/test/TestLoginPage.class
+com/nexton/cloudapp/qa/baseTest/BaseTest.class
+com/nexton/cloudapp/qa/test/TestSignUpPage.class
+com/nexton/cloudapp/qa/test/TestDashboardPage.class

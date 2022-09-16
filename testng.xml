@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.nexton.cloudapp.qa.listeners.ListenerClass"/>
+    </listeners>
+    <test thread-count="1" parallel="methods" name="Test">
+
+
+        <classes>
+<!--            <class name="com.nexton.cloudapp.qa.test.TestSignUpPage"></class>-->
+<!--            <class name="com.nexton.cloudapp.qa.test.TestLoginPage"></class>-->
+            <class name="com.nexton.cloudapp.qa.test.TestDashboardPage"></class>
+        </classes>
+    </test>
+</suite>
